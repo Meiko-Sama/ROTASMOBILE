@@ -1,5 +1,8 @@
 import React from "react"
-import { Text, View, Button } from 'react-native';
+import { Text, View, Button, TouchableOpacity } from 'react-native';
+
+// IMPORTAÇÃO ICONES
+import Entypo from '@expo/vector-icons/Entypo';
 
 // IMPORTAÇÃO DO STYLES
 import { styles } from "../styles/styles"
@@ -12,13 +15,26 @@ export default function Sobre() {
 
   return (
     <View style={styles.container}>
-      <Text>PAGINA SOBRE</Text>
+
+      {/* BOTÃO DO DRAWER */}
+      {/* <TouchableOpacity style={{
+        width: 40,
+        height: 40,
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: 40,
+        position: "absolute",
+        top: 30,
+        left: 20
+      }} onPress={() => navigation.openDrawer()}  >
+        <Entypo name="menu" size={40} color="white" />
+      </TouchableOpacity> */}
 
       {/* ESSA VOLTA PARA A PAGINA ANTERIOR */}
       {/* <Button title="HOME" onPress={() => navigation.goBack()} /> */}
 
       {/* ESSA PAGINA VOLTA PARA A PAGINA QUE A GENTE DECICDIR */}
-      <Button title="Home" onPress={() => navigation.navigate("Home")} />
+      <Text style={{ color: "white", fontSize: 25, fontWeight: "bold" }}>PAGINA SOBRE</Text>
     </View>
   );
 }

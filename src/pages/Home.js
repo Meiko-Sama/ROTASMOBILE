@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <Text>PAGINA HOME</Text>
+      <Text style={{ color: "white", fontSize: 25, fontWeight: "bold", bottom: 12 }}>PAGINA HOME</Text>
 
 
 
