@@ -14,7 +14,13 @@ export default function Home() {
     <View style={styles.container}>
       <Text>PAGINA HOME</Text>
 
-      <Button title="Sobre" onPress={() => navigation.navigate("Sobre")} />
+
+
+      {/* ESSA VOLTA PARA A PAGINA ANTERIOR */}
+      <Button title="SOBRE" onPress={() => navigation.navigate("Sobre")} />
+
+      {/* ESSA PAGINA VOLTA PARA A PAGINA QUE A GENTE DECICDIR */}
+      {/* <Button title="Sobre" onPress={() => navigation.navigate("Sobre")} /> */}
     </View>
   );
 }

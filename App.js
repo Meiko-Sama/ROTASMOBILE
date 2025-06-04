@@ -20,9 +20,9 @@ export default function App() {
     // Vai abraçar toda a nossa navegação, vai gerenciar todas as páginas
     <NavigationContainer>
       {/* O STACK NAVIGATOR ELE VAI DECIDIR QUE PAGINA A GENTE COMEÇA PRIMEIRO, QUANTAS TELAS TEM */}
-      <Stack.Navigator initialRouteName='Home'>
+      <Stack.Navigator initialRouteName='Home' >
         {/* Quantas telas eu tenho, quais são as telas */}
-        <Stack.Screen name='Home' component={Home} />
+        <Stack.Screen name='Home' component={Home} options={{ headerShown: false }} />
         <Stack.Screen name='Sobre' component={Sobre} />
       </Stack.Navigator>
     </NavigationContainer>
