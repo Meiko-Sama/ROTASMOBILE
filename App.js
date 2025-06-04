@@ -17,9 +17,11 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
+    // Vai abraçar toda a nossa navegação, vai gerenciar todas as páginas
     <NavigationContainer>
-      {/* O STACK NAVIGATOR ELE VAI DECIDIR QUE PAGINA A GENTE COMEÇA PRIMEIRO */}
+      {/* O STACK NAVIGATOR ELE VAI DECIDIR QUE PAGINA A GENTE COMEÇA PRIMEIRO, QUANTAS TELAS TEM */}
       <Stack.Navigator initialRouteName='Home'>
+        {/* Quantas telas eu tenho, quais são as telas */}
         <Stack.Screen name='Home' component={Home} />
         <Stack.Screen name='Sobre' component={Sobre} />
       </Stack.Navigator>
